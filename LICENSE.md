@@ -1,6 +1,6 @@
 License for textures/media
 ==========================
-Copyright (C) 2019 Panquesito7, David Leal (halfpacho@gmail.com)   
+Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)   
 Copyright (C) Various other Minetest developers/contributors
 
 [Panquesito7](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
@@ -32,7 +32,7 @@ All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](htt
 
 License for source code
 =======================
-Copyright (C) 2019 Panquesito7, David Leal (halfpacho@gmail.com)  
+Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)  
 Copyright (C) Various other Minetest developers/contributors   
 
 

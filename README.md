@@ -71,7 +71,7 @@ There are 4 types of cloud:
 This mod works with MT 5.0.0 and above.
 
 ## License
-Copyright (C) 2019 Panquesito7, David Leal    
+Copyright (C) 2019-2020 Panquesito7, David Leal    
 Copyright (C) Various other Minetest developers/contributors    
 
 See [`LICENSE.md`](LICENSE.md) for more information.
