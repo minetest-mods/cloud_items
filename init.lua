@@ -18,7 +18,7 @@ You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
 USA
-	
+
 ==========================================================================
 
 Dependencies: default (included in minetest_game)
@@ -88,10 +88,10 @@ local schem_offset_z = -3
 
 local schempath = minetest.get_modpath(minetest.get_current_modname())..'/schems'
 local function place_schem(origin, filename)
-	local file, err = io.open(schempath..'/'..filename, 'rb')
+	local file = io.open(schempath..'/'..filename, 'rb')
 	local value = file:read('*a')
 	file:close()
-		
+
 	local nodes = minetest.deserialize(value)
 	if not nodes then return nil end
 
@@ -420,7 +420,7 @@ if minetest.get_modpath("3d_armor") then
 		armor_groups = {fleshy=10},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
-	
+
 	armor:register_armor("cloud_items:leggings_cloud", {
 		description = "Cloud Leggings",
 		inventory_image = "cloud_items_inv_leggings_cloud.png",
@@ -428,7 +428,7 @@ if minetest.get_modpath("3d_armor") then
 		armor_groups = {fleshy=30},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
-	
+
 	armor:register_armor("cloud_items:chestplate_cloud", {
 		description = "Cloud Chestplate",
 		inventory_image = "cloud_items_inv_chestplate_cloud.png",
@@ -436,7 +436,7 @@ if minetest.get_modpath("3d_armor") then
 		armor_groups = {fleshy=30},
 		damage_groups = {cracky=2, snappy=1, level=6},
 	})
-	
+
 		armor:register_armor("cloud_items:boots_cloud", {
 		description = "Cloud Boots",
 		inventory_image = "cloud_items_inv_boots_cloud.png",
