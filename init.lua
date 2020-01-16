@@ -408,6 +408,14 @@ minetest.register_craft({
 	}
 })
 
+-- Cooking
+minetest.register_craft({
+	type = "cooking",
+	output = "cloud_items:cloud_ingot",
+	recipe = "cloud_items:cloud_lump",
+	cooktime = 30,
+})
+
 -----------------------
 -- 3D Armor support --
 -----------------------
