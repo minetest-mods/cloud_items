@@ -1,6 +1,6 @@
 # Cloud Items
 
-![](https://github.com/Panquesito7/cloud_items/workflows/Check%20&%20Release/badge.svg)
+[![](https://github.com/Panquesito7/cloud_items/workflows/Check%20&%20Release/badge.svg)](https://github.com/Panquesito7/cloud_items/actions)
 [![License](https://img.shields.io/badge/license-LGPLv2.1%2B-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
 Adds powerful cloud tools for Minetest.  
