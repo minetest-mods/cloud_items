@@ -83,7 +83,7 @@ There are 4 types of cloud:
 
 ### Optional dependencies
 
-- [3d_armor](https://github.com/minetest-mods/3d_armor)
+- [`3d_armor`](https://github.com/minetest-mods/3d_armor)
 
 ## Requirements
 
