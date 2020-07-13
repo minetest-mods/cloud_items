@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: Check & Release
+name: build
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -8,4 +8,4 @@ jobs:
       - name: lint
         uses: Roang-zero1/factorio-mod-luacheck@master
         with:
-          luacheckrc_url: https://raw.githubusercontent.com/Panquesito7/cloud_items/master/.luacheckrc
+          luacheckrc_url: ""

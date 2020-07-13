@@ -11,4 +11,4 @@ read_globals = {
 	table = {fields = {"copy", "getn"}},
 
     "armor", "PseudoRandom",
-} 
+}
