@@ -1,0 +1,21 @@
+# textdomain: cloud_items
+
+
+### init.lua ###
+
+Cloud=
+Cloud Axe=
+Cloud Block=
+Cloud Boots=
+Cloud Chestplate=
+Cloud Helmet=
+Cloud Ingot=
+Cloud Leggings=
+Cloud Lump=
+Cloud Ore=
+Cloud Pickaxe=
+Cloud Shield=
+Cloud Shovel=
+Cloud Sword=
+Cloud decoration Block=
+Decorative cloud=
