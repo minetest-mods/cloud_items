@@ -1,0 +1,21 @@
+# textdomain: cloud_items
+
+
+### init.lua ###
+
+Cloud=Nube
+Cloud Axe=Hacha de nube
+Cloud Block=Bloque de nube
+Cloud Boots=Botas de nube
+Cloud Chestplate=Coraza de nube
+Cloud Helmet=Casco de nube
+Cloud Ingot=Lingote de nube
+Cloud Leggings=Polainas de nube
+Cloud Lump=Terrón de nube
+Cloud Ore=Mineral de nube
+Cloud Pickaxe=Pico de nube
+Cloud Shield=Escudo de nube
+Cloud Shovel=Pala de nube
+Cloud Sword=Espada de nube
+Cloud decoration Block=Bloque de decoración de nube
+Decorative cloud=Nube decorativa
