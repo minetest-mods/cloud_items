@@ -10,5 +10,5 @@ read_globals = {
 	string = {fields = {"split", "trim"}},
 	table = {fields = {"copy", "getn"}},
 
-    "armor", "PseudoRandom",
+    "armor", "PseudoRandom", "toolranks",
 }
