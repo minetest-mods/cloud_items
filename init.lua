@@ -22,7 +22,7 @@ USA
 ==========================================================================
 
 Dependencies: default (included in minetest_game)
-Optional dependencies: 3D Armor, ToolRanks
+Optional dependencies: 3D Armor, Tool Ranks
 --]]
 
 -- Translation support
