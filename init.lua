@@ -22,7 +22,7 @@ USA
 ==========================================================================
 
 Dependencies: default (included in minetest_game)
-Optional dependencies: 3D Armor
+Optional dependencies: 3D Armor, ToolRanks
 --]]
 
 -- Translation support
@@ -283,8 +283,11 @@ minetest.register_craftitem("cloud_items:cloud_ingot", {
 -- Tools --
 ------------
 
+local toolranks_loaded = minetest.get_modpath("toolranks")
+
+local sword_desc = S("Cloud Sword")
 minetest.register_tool("cloud_items:cloud_sword", {
-	description = S("Cloud Sword"),
+	description = toolranks_loaded and toolranks.create_description(sword_desc) or sword_desc,
 	inventory_image = "cloud_items_tool_cloudsword.png",
 	range = 5,
 	tool_capabilities = {
@@ -296,11 +299,15 @@ minetest.register_tool("cloud_items:cloud_sword", {
 		damage_groups = {fleshy=11},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {sword = 1}
+	groups = {sword = 1},
+	-- toolranks support
+	original_description = toolranks_loaded and sword_desc or nil,
+	after_use = toolranks_loaded and toolranks.new_afteruse or nil,
 })
 
+local pickaxe_desc = S("Cloud Pickaxe")
 minetest.register_tool("cloud_items:cloud_pickaxe", {
-	description = S("Cloud Pickaxe"),
+	description = toolranks_loaded and toolranks.create_description(pickaxe_desc) or pickaxe_desc,
 	inventory_image = "cloud_items_tool_cloudpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -311,11 +318,15 @@ minetest.register_tool("cloud_items:cloud_pickaxe", {
 		damage_groups = {fleshy=6},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {pickaxe = 1}
+	groups = {pickaxe = 1},
+	-- toolranks support
+	original_description = toolranks_loaded and pickaxe_desc or nil,
+	after_use = toolranks_loaded and toolranks.new_afteruse or nil,
 })
 
+local shovel_desc = S("Cloud Shovel")
 minetest.register_tool("cloud_items:cloud_shovel", {
-	description = S("Cloud Shovel"),
+	description = toolranks_loaded and toolranks.create_description(pickaxe_desc) or shovel_desc,
 	inventory_image = "cloud_items_tool_cloudshovel.png",
 	wield_image = "cloud_items_tool_cloudshovel.png^[transformR90",
 	tool_capabilities = {
@@ -327,11 +338,15 @@ minetest.register_tool("cloud_items:cloud_shovel", {
 		damage_groups = {fleshy=4.50},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {shovel = 1}
+	groups = {shovel = 1},
+	-- toolranks support
+	original_description = toolranks_loaded and shovel_desc or nil,
+	after_use = toolranks_loaded and toolranks.new_afteruse or nil,
 })
 
+local axe_desc = S("Cloud Axe")
 minetest.register_tool("cloud_items:cloud_axe", {
-	description = S("Cloud Axe"),
+	description = toolranks_loaded and toolranks.create_description(pickaxe_desc) or axe_desc,
 	inventory_image = "cloud_items_tool_cloudaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -342,7 +357,10 @@ minetest.register_tool("cloud_items:cloud_axe", {
 		damage_groups = {fleshy=7.50},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {axe = 1}
+	groups = {axe = 1},
+	-- toolranks support
+	original_description = toolranks_loaded and axe_desc or nil,
+	after_use = toolranks_loaded and toolranks.new_afteruse or nil,
 })
 
 -------------
