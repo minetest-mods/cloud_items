@@ -25,12 +25,15 @@ Dependencies: default (included in minetest_game)
 Optional dependencies: 3D Armor
 --]]
 
+-- Translation support
+local S = minetest.get_translator("cloud_items")
+
 -----------------
 -- Ores/blocks --
 -----------------
 
 minetest.register_node("cloud_items:cloud_ore", {
-	description = "Cloud Ore",
+	description = S("Cloud Ore"),
 	tiles = {"default_stone.png^cloud_items_mineral_cloud.png"},
 	light_source = 7,
 	groups = {cracky = 1, level = 3},
@@ -39,7 +42,7 @@ minetest.register_node("cloud_items:cloud_ore", {
 })
 
 minetest.register_node("cloud_items:cloudblock", {
-	description = "Cloud Block",
+	description = S("Cloud Block"),
 	tiles = {"cloud_items_cloud_block.png"},
 	light_source = 5,
 	is_ground_content = false,
@@ -48,7 +51,7 @@ minetest.register_node("cloud_items:cloudblock", {
 })
 
 minetest.register_node("cloud_items:decoration_block", {
-	description = "Cloud decoration Block",
+	description = S("Cloud decoration Block"),
 	tiles = {"cloud_items_decorationblock.png"},
 	light_source = 5,
 	is_ground_content = false,
@@ -57,7 +60,7 @@ minetest.register_node("cloud_items:decoration_block", {
 })
 
 minetest.register_node("cloud_items:cloud", {
-	description = "Cloud",
+	description = S("Cloud"),
 	tiles = {"default_cloud.png"},
 	light_source = 2,
 	is_ground_content = false,
@@ -67,7 +70,7 @@ minetest.register_node("cloud_items:cloud", {
 })
 
 minetest.register_node("cloud_items:decorative_cloud", {
-	description = "Decorative cloud",
+	description = S("Decorative cloud"),
 	tiles = {"default_cloud.png"},
 	light_source = 2,
 	is_ground_content = false,
@@ -267,12 +270,12 @@ end)
 ------------------
 
 minetest.register_craftitem("cloud_items:cloud_lump", {
-	description = "Cloud Lump",
+	description = S("Cloud Lump"),
 	inventory_image = "cloud_items_cloud_lump.png",
 })
 
 minetest.register_craftitem("cloud_items:cloud_ingot", {
-	description = "Cloud Ingot",
+	description = S("Cloud Ingot"),
 	inventory_image = "cloud_items_cloud_ingot.png",
 })
 
@@ -281,7 +284,7 @@ minetest.register_craftitem("cloud_items:cloud_ingot", {
 ------------
 
 minetest.register_tool("cloud_items:cloud_sword", {
-	description = "Cloud Sword",
+	description = S("Cloud Sword"),
 	inventory_image = "cloud_items_tool_cloudsword.png",
 	range = 5,
 	tool_capabilities = {
@@ -297,7 +300,7 @@ minetest.register_tool("cloud_items:cloud_sword", {
 })
 
 minetest.register_tool("cloud_items:cloud_pickaxe", {
-	description = "Cloud Pickaxe",
+	description = S("Cloud Pickaxe"),
 	inventory_image = "cloud_items_tool_cloudpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -312,7 +315,7 @@ minetest.register_tool("cloud_items:cloud_pickaxe", {
 })
 
 minetest.register_tool("cloud_items:cloud_shovel", {
-	description = "Cloud Shovel",
+	description = S("Cloud Shovel"),
 	inventory_image = "cloud_items_tool_cloudshovel.png",
 	wield_image = "cloud_items_tool_cloudshovel.png^[transformR90",
 	tool_capabilities = {
@@ -328,7 +331,7 @@ minetest.register_tool("cloud_items:cloud_shovel", {
 })
 
 minetest.register_tool("cloud_items:cloud_axe", {
-	description = "Cloud Axe",
+	description = S("Cloud Axe"),
 	inventory_image = "cloud_items_tool_cloudaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -422,7 +425,7 @@ minetest.register_craft({
 
 if minetest.get_modpath("3d_armor") then
 	armor:register_armor("cloud_items:helmet_cloud", {
-		description = "Cloud Helmet",
+		description = S("Cloud Helmet"),
 		inventory_image = "cloud_items_inv_helmet_cloud.png",
 		groups = {armor_head=1, armor_heal=16, armor_use=70},
 		armor_groups = {fleshy=10},
@@ -430,7 +433,7 @@ if minetest.get_modpath("3d_armor") then
 	})
 
 	armor:register_armor("cloud_items:leggings_cloud", {
-		description = "Cloud Leggings",
+		description = S("Cloud Leggings"),
 		inventory_image = "cloud_items_inv_leggings_cloud.png",
 		groups = {armor_legs=1, armor_heal=16, armor_use=70},
 		armor_groups = {fleshy=30},
@@ -438,7 +441,7 @@ if minetest.get_modpath("3d_armor") then
 	})
 
 	armor:register_armor("cloud_items:chestplate_cloud", {
-		description = "Cloud Chestplate",
+		description = S("Cloud Chestplate"),
 		inventory_image = "cloud_items_inv_chestplate_cloud.png",
 		groups = {armor_torso=1, armor_heal=16, armor_use=70},
 		armor_groups = {fleshy=30},
@@ -446,7 +449,7 @@ if minetest.get_modpath("3d_armor") then
 	})
 
 		armor:register_armor("cloud_items:boots_cloud", {
-		description = "Cloud Boots",
+		description = S("Cloud Boots"),
 		inventory_image = "cloud_items_inv_boots_cloud.png",
 		groups = {armor_feet=1, armor_heal=16, armor_use=70, physics_speed=1,
 				physics_jump=0.5},
@@ -456,7 +459,7 @@ if minetest.get_modpath("3d_armor") then
 
 	if minetest.get_modpath("shields") then
 		armor:register_armor("cloud_items:shield_cloud", {
-			description = "Cloud Shield",
+			description = S("Cloud Shield"),
 			inventory_image = "cloud_items_inv_shield_cloud.png",
 			groups = {armor_shield=1, armor_heal=12, armor_use=70},
 			armor_groups = {fleshy=10},
