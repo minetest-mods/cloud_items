@@ -21,8 +21,8 @@ USA
 
 ==========================================================================
 
-Dependencies: default (included in minetest_game)
-Optional dependencies: 3D Armor, Tool Ranks
+Dependencies: default (included in Minetest Game)
+Optional dependencies: 3D Armor, Tool Ranks, stairs (included in Minetest Game)
 --]]
 
 -- Translation support
@@ -60,7 +60,7 @@ minetest.register_node("cloud_items:decoration_block", {
 })
 
 minetest.register_node("cloud_items:cloud", {
-	description = S("Cloud"),
+	description = S("Cloud (no drops)"),
 	tiles = {"default_cloud.png"},
 	light_source = 2,
 	is_ground_content = false,
@@ -78,6 +78,55 @@ minetest.register_node("cloud_items:decorative_cloud", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+------------
+-- Stairs --
+------------
+if not minetest.get_modpath("moreblocks") and minetest.get_modpath("stairs") then
+	-- Decorative cloud (white)
+	local recipe = "cloud_items:decorative_cloud"
+	local groups = {cracky = 1, level = 3, not_in_creative_inventory = 1}
+	local images = {"default_cloud.png"}
+	local sounds = default.node_sound_stone_defaults()
+
+	stairs.register_stair("decorative_cloud", recipe, groups, images, "Decorative cloud Stair",
+		sounds, true)
+	stairs.register_stair_inner("decorative_cloud", recipe, groups, images, "",
+		sounds, true, "Inner decorative cloud Stair")
+	stairs.register_stair_outer("decorative_cloud", recipe, groups, images, "",
+		sounds, true, "Outer decorative cloud Stair")
+	stairs.register_slab("decorative_cloud", recipe, groups, images, "Decorative cloud Slab",
+		sounds, true)
+
+	-- Normal cloud block
+	recipe = "cloud_items:cloudblock"
+	groups = {cracky = 1, level = 3.9}
+	images = {"cloud_items_cloud_block.png"}
+	sounds = default.node_sound_stone_defaults()
+
+	stairs.register_stair("cloud", recipe, groups, images, "Cloud Stair",
+		sounds, true)
+	stairs.register_stair_inner("cloud", recipe, groups, images, "",
+		sounds, true, "Inner cloud Stair")
+	stairs.register_stair_outer("cloud", recipe, groups, images, "",
+		sounds, true, "Outer cloud Stair")
+	stairs.register_slab("cloud", recipe, groups, images, "Cloud Slab",
+		sounds, true)
+
+	-- Decorative cloud block
+	recipe = "cloud_items:decoration_block"
+	groups = {cracky = 1, level = 3}
+	images = {"cloud_items_decorationblock.png"}
+	sounds = default.node_sound_stone_defaults()
+
+	stairs.register_stair("cloud_decorative_block", recipe, groups, images, "Decorative cloud Stair",
+		sounds, true)
+	stairs.register_stair_inner("cloud_decorative_block", recipe, groups, images, "",
+		sounds, true, "Inner decorative cloud Stair")
+	stairs.register_stair_outer("cloud_decorative_block", recipe, groups, images, "",
+		sounds, true, "Outer decorative cloud Stair")
+	stairs.register_slab("cloud_decorative_block", recipe, groups, images, "Decorative cloud Slab",
+		sounds, true)
+end
 
 -------------
 -- Mapgen --
