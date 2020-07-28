@@ -44,6 +44,15 @@ Medium schematic
 Big schematic
 ![Big schematic](https://user-images.githubusercontent.com/51391473/87363085-03bf5c80-c536-11ea-8ab5-155a931e7400.png)
 
+### Cloud house
+
+If you go above 1500 blocks up, you may find a cloud house!\
+This cloud house includes great things such as chests with stuff!
+
+![Cloud house](https://user-images.githubusercontent.com/51391473/88605632-178fb600-d040-11ea-8a38-e107881fb49b.png)
+![Cloud house (1st floor)](https://user-images.githubusercontent.com/51391473/88605633-18284c80-d040-11ea-8452-3fd8fbbeb8f6.png)
+![Cloud house (2nd floor)](https://user-images.githubusercontent.com/51391473/88605634-18c0e300-d040-11ea-9bc6-ddfd7dcd3a0e.png)
+
 ### Types of cloud
 
 There are 4 types of cloud:
@@ -80,10 +89,14 @@ There are 4 types of cloud:
 ## Dependencies
 
 - `default` (included in [Minetest Game](https://github.com/minetest/minetest_game))
+- [`worldedit`](https://github.com/Uberi/Minetest-WorldEdit)
+  - This is required due to the `worldedit.deserialize` function.
 
 ### Optional dependencies
 
 - [`3d_armor`](https://github.com/minetest-mods/3d_armor)
+- [`toolranks`](https://github.com/lisacvuk/minetest-toolranks)
+- `stairs` (included in [Minetest Game](https://github.com/minetest/minetest_game))
 
 ## Requirements
 

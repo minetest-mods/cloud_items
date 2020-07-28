@@ -21,7 +21,7 @@ USA
 
 ==========================================================================
 
-Dependencies: default (included in Minetest Game)
+Dependencies: WorldEdit, default (included in Minetest Game)
 Optional dependencies: 3D Armor, Tool Ranks, stairs (included in Minetest Game)
 --]]
 
@@ -157,6 +157,18 @@ local function place_schem(origin, filename)
 			minetest.add_node(pos, {name=entry.name})
 		end
 	end
+	minetest.log("action", "Successfully placed schematic (no metadata)")
+end
+
+-- Function to load an schematic with metadata
+-- Uses `worldedit.deserialize` function
+local function place_schem_metadata(origin, filename)
+	local file, _ = io.open(schempath .. '/' .. filename, 'rb')
+	local value = file:read('*a')
+	file:close()
+
+	local nodes = worldedit.deserialize(origin, value)
+	minetest.log("action", "Successfully placed schematic with " .. nodes .. " nodes (metadata)")
 end
 
 --[[
@@ -168,7 +180,7 @@ See the mod license (https://github.com/clinew/nyancat/blob/master/license.txt) 
 
 local function generate_small(minp, maxp, seed)
 	local height_min = 200
-	local height_max = 1000
+	local height_max = 1500
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -192,7 +204,7 @@ end
 -- There are more chances to find an small schematic without an ore.
 local function generate_small_without_ore(minp, maxp, seed)
 	local height_min = 200
-	local height_max = 1000
+	local height_max = 1500
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -215,7 +227,7 @@ end
 -- Medium.
 local function generate_medium(minp, maxp, seed)
 	local height_min = 380
-	local height_max = 1180
+	local height_max = 1680
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -238,7 +250,7 @@ end
 -- Medium (without ore).
 local function generate_medium_without_ore(minp, maxp, seed)
 	local height_min = 380
-	local height_max = 1180
+	local height_max = 1680
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -261,7 +273,7 @@ end
 -- Big.
 local function generate_big(minp, maxp, seed)
 	local height_min = 580
-	local height_max = 1380
+	local height_max = 1880
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -284,7 +296,7 @@ end
 -- Big (without ore).
 local function generate_big_without_ore(minp, maxp, seed)
 	local height_min = 580
-	local height_max = 1380
+	local height_max = 1880
 	if maxp.y < height_min or minp.y > height_max then
 		return
 	end
@@ -304,6 +316,29 @@ local function generate_big_without_ore(minp, maxp, seed)
 	end
 end
 
+-- Cloud house
+local function generate_cloud_house(minp, maxp, seed)
+	local height_min = 1500
+	local height_max = 3750
+	if maxp.y < height_min or minp.y > height_max then
+		return
+	end
+	local y_min = math.max(minp.y, height_min)
+	local y_max = math.min(maxp.y, height_max)
+	local volume = (maxp.x - minp.x + 1) * (y_max - y_min + 1) * (maxp.z - minp.z + 1)
+	local pr = PseudoRandom(seed + 9324342)
+	local max_num_schematics = math.floor(volume / (65 * 65 * 65))
+	for i = 1, max_num_schematics do
+		if pr:next(0, 1000) == 0 then
+			local x0 = pr:next(minp.x, maxp.x)
+			local y0 = pr:next(minp.y, maxp.y)
+			local z0 = pr:next(minp.z, maxp.z)
+			local p0 = {x = x0, y = y0, z = z0}
+			place_schem_metadata(p0, "cloud_house.we")
+		end
+	end
+end
+
 -- Generate/place the schematics.
 minetest.register_on_generated(function(minp, maxp, seed)
 	generate_small(minp, maxp, seed)
@@ -312,6 +347,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	generate_medium_without_ore(minp, maxp, seed)
 	generate_big(minp, maxp, seed)
 	generate_big_without_ore(minp, maxp, seed)
+	generate_cloud_house(minp, maxp, seed)
 end)
 
 ------------------
