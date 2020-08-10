@@ -22,7 +22,7 @@ USA
 ==========================================================================
 
 Dependencies: WorldEdit, default (included in Minetest Game)
-Optional dependencies: 3D Armor, Tool Ranks, stairs (included in Minetest Game)
+Optional dependencies: 3D Armor, Tool Ranks, More Blocks stairs (included in Minetest Game)
 --]]
 
 -- Translation support
@@ -126,6 +126,36 @@ if not minetest.get_modpath("moreblocks") and minetest.get_modpath("stairs") the
 		sounds, true, "Outer decorative cloud Stair")
 	stairs.register_slab("cloud_decorative_block", recipe, groups, images, "Decorative cloud Slab",
 		sounds, true)
+end
+
+-- Moreblocks support
+if minetest.get_modpath("moreblocks") then
+	-- Decorative cloud (white)
+	stairsplus:register_all("cloud_items", "decorative_cloud", "cloud_items:decorative_cloud", {
+		description = "Decorative cloud",
+		tiles = {"default_cloud.png"},
+		groups = {cracky = 1, level = 3, not_in_creative_inventory = 1},
+		light_source = 2,
+		sounds = default.node_sound_stone_defaults()
+	})
+
+	-- Normal cloud block
+	stairsplus:register_all("cloud_items", "cloudblock", "cloud_items:cloudblock", {
+		description = "Cloud",
+		tiles = {"cloud_items_cloud_block.png"},
+		groups = {cracky = 1, level = 3},
+		light_source = 5,
+		sounds = default.node_sound_stone_defaults()
+	})
+
+	-- Decorative cloud block
+	stairsplus:register_all("cloud_items", "decoration_block", "cloud_items:decoration_block", {
+		description = "Decorative cloud",
+		tiles = {"cloud_items_decorationblock.png"},
+		groups = {cracky = 1, level = 3.9},
+		light_source = 5,
+		sounds = default.node_sound_stone_defaults()
+	})
 end
 
 -------------
