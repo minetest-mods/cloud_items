@@ -81,20 +81,21 @@ minetest.register_node("cloud_items:decorative_cloud", {
 ------------
 -- Stairs --
 ------------
+
+-- Decorative cloud (white)
 if not minetest.get_modpath("moreblocks") and minetest.get_modpath("stairs") then
-	-- Decorative cloud (white)
 	local recipe = "cloud_items:decorative_cloud"
 	local groups = {cracky = 1, level = 3, not_in_creative_inventory = 1}
 	local images = {"default_cloud.png"}
 	local sounds = default.node_sound_stone_defaults()
 
-	stairs.register_stair("decorative_cloud", recipe, groups, images, "Decorative cloud Stair",
+	stairs.register_stair("decorative_cloud", recipe, groups, images, S("Decorative cloud Stair"),
 		sounds, true)
 	stairs.register_stair_inner("decorative_cloud", recipe, groups, images, "",
-		sounds, true, "Inner decorative cloud Stair")
+		sounds, true, S("Inner decorative cloud Stair"))
 	stairs.register_stair_outer("decorative_cloud", recipe, groups, images, "",
-		sounds, true, "Outer decorative cloud Stair")
-	stairs.register_slab("decorative_cloud", recipe, groups, images, "Decorative cloud Slab",
+		sounds, true, S("Outer decorative cloud Stair"))
+	stairs.register_slab("decorative_cloud", recipe, groups, images, S("Decorative cloud Slab"),
 		sounds, true)
 
 	-- Normal cloud block
@@ -103,13 +104,13 @@ if not minetest.get_modpath("moreblocks") and minetest.get_modpath("stairs") the
 	images = {"cloud_items_cloud_block.png"}
 	sounds = default.node_sound_stone_defaults()
 
-	stairs.register_stair("cloud", recipe, groups, images, "Cloud Stair",
+	stairs.register_stair("cloud", recipe, groups, images, S("Cloud Stair"),
 		sounds, true)
 	stairs.register_stair_inner("cloud", recipe, groups, images, "",
-		sounds, true, "Inner cloud Stair")
+		sounds, true, S("Inner cloud Stair"))
 	stairs.register_stair_outer("cloud", recipe, groups, images, "",
-		sounds, true, "Outer cloud Stair")
-	stairs.register_slab("cloud", recipe, groups, images, "Cloud Slab",
+		sounds, true, S("Outer cloud Stair"))
+	stairs.register_slab("cloud", recipe, groups, images, S("Cloud Slab"),
 		sounds, true)
 
 	-- Decorative cloud block
@@ -118,13 +119,13 @@ if not minetest.get_modpath("moreblocks") and minetest.get_modpath("stairs") the
 	images = {"cloud_items_decorationblock.png"}
 	sounds = default.node_sound_stone_defaults()
 
-	stairs.register_stair("cloud_decorative_block", recipe, groups, images, "Decorative cloud Stair",
+	stairs.register_stair("cloud_decorative_block", recipe, groups, images, S("Decorative cloud Stair"),
 		sounds, true)
 	stairs.register_stair_inner("cloud_decorative_block", recipe, groups, images, "",
-		sounds, true, "Inner decorative cloud Stair")
+		sounds, true, S("Inner decorative cloud Stair"))
 	stairs.register_stair_outer("cloud_decorative_block", recipe, groups, images, "",
-		sounds, true, "Outer decorative cloud Stair")
-	stairs.register_slab("cloud_decorative_block", recipe, groups, images, "Decorative cloud Slab",
+		sounds, true, S("Outer decorative cloud Stair"))
+	stairs.register_slab("cloud_decorative_block", recipe, groups, images, S("Decorative cloud Slab"),
 		sounds, true)
 end
 
@@ -132,7 +133,7 @@ end
 if minetest.get_modpath("moreblocks") then
 	-- Decorative cloud (white)
 	stairsplus:register_all("cloud_items", "decorative_cloud", "cloud_items:decorative_cloud", {
-		description = "Decorative cloud",
+		description = S("Decorative cloud"),
 		tiles = {"default_cloud.png"},
 		groups = {cracky = 1, level = 3, not_in_creative_inventory = 1},
 		light_source = 2,
@@ -141,7 +142,7 @@ if minetest.get_modpath("moreblocks") then
 
 	-- Normal cloud block
 	stairsplus:register_all("cloud_items", "cloudblock", "cloud_items:cloudblock", {
-		description = "Cloud",
+		description = S("Cloud"),
 		tiles = {"cloud_items_cloud_block.png"},
 		groups = {cracky = 1, level = 3},
 		light_source = 5,
@@ -150,7 +151,7 @@ if minetest.get_modpath("moreblocks") then
 
 	-- Decorative cloud block
 	stairsplus:register_all("cloud_items", "decoration_block", "cloud_items:decoration_block", {
-		description = "Decorative cloud",
+		description = S("Decorative cloud"),
 		tiles = {"cloud_items_decorationblock.png"},
 		groups = {cracky = 1, level = 3.9},
 		light_source = 5,
