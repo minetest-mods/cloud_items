@@ -552,6 +552,17 @@ minetest.register_craft({
 	}
 })
 
+-- Multitools support for crafting
+if minetest.get_modpath("multitools") then
+	minetest.register_craft({
+		output = "cloud_items:multitool_cloud",
+		recipe = {
+			{"", "cloud_items:cloud_shovel", ""},
+			{"cloud_items:cloud_axe", "cloud_items:cloud_pickaxe", "cloud_items:cloud_sword"},
+		}
+	})
+end
+
 -- Decoration block
 minetest.register_craft({
 	output = "cloud_items:decoration_block 7",
