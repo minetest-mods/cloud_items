@@ -62,28 +62,28 @@ There are 4 types of cloud:
   - Hard to find.
   - You may find from 1 to 4 ores.
   - Stronger than diamond.
-  - Damage: 9
+  - Damage: 11
     - Can kill players with 2 hits.
   - Spawns at 200 blocks and above.
 - Cloud star (comming soon)
   - Difficult to find.
   - You may find from 1 to 4 ores.
   - Stronger than cloud and diamond.
-  - Damage: 10
+  - Damage: 12
     - Can kill players with 2 hits.
   - Spawns at 350 blocks and above.  
 - Cloud meteor (comming soon)
   - Very hard to find.
   - You may find from 1 to 3 ores.
   - Stronger than cloud (star) and diamond.
-  - Damage: 12
+  - Damage: 14
     - Can kill players with 2 hits.
   - Spawns at 500 blocks and above.
 - Cloud comet (comming soon)
   - Very difficult to find.
   - You may find only 1 ore.
   - Stronger than all materials.
-  - Damage: 15
+  - Damage: 17
     - Very strong, can kill a player with 2 hits.
   - Spawns at 800 blocks and above.
 
@@ -98,11 +98,12 @@ There are 4 types of cloud:
 - [`3d_armor`](https://github.com/minetest-mods/3d_armor)
 - [`toolranks`](https://github.com/lisacvuk/minetest-toolranks)
 - [`moreblocks`](https://github.com/minetest-mods/moreblocks)
+- [`multitools`](https://github.com/ChimneySwift/multitools)
 - `stairs` (included in [Minetest Game](https://github.com/minetest/minetest_game))
 
 ## Requirements
 
-Cloud Items is currently tested with Minetest 5.2.0.\
+Cloud Items is currently tested with Minetest 5.3.0.\
 Issues may arise if you use older or newer versions.
 
 It shall work with MT 5.0.0 and above, though.
