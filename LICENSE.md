@@ -1,39 +1,42 @@
-License for textures/media
-==========================
-Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)   
+# License for textures/media
+
+Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
-[Panquesito7](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
+[David Leal](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
 
-`screenshot.png`
+- `screenshot.png`
 
 [BlockMen](https://github.com/BlockMen) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-`cloud_items_tool_*.png` - [`default_tool_*.png`](https://github.com/minetest/minetest_game/tree/master/mods/default/textures)    
-`cloud_items_cloud_ingot.png` - [`default_gold_ingot.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_ingot.png)
+- `cloud_items_tool_*.png` - [`default_tool_*.png`](https://github.com/minetest/minetest_game/tree/master/mods/default/textures)\
+- `cloud_items_cloud_ingot.png` - [`default_gold_ingot.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_ingot.png)
 
 [InfinityProject](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=1494) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-`cloud_items_mineral_cloud.png` - [`default_mineral_diamond.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_mineral_diamond.png)
+- `cloud_items_mineral_cloud.png` - [`default_mineral_diamond.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_mineral_diamond.png)
 
 [Gambit](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=398) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-`cloud_items_cloud_lump.png` - [`default_gold_lump.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_lump.png)
+- `cloud_items_cloud_lump.png` - [`default_gold_lump.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_lump.png)
 
 [kilbith](https://github.com/kilbith) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-`cloud_items_cloud_block.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)   
-`cloud_items_decorationblock.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
+- `cloud_items_cloud_block.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)\
+- `cloud_items_decorationblock.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
+
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/):
+
+- `cloud_items_multitool_cloud.png`
 
 Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) 2017-2018 ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](https://github.com/stujones11/minetest-3d_armor/tree/master/3d_armor/textures).
+- All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](https://github.com/stujones11/minetest-3d_armor/tree/master/3d_armor/textures).
 
+## License for source code
 
-License for source code
-=======================
-Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)  
-Copyright (C) Various other Minetest developers/contributors   
+Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)\
+Copyright (C) Various other Minetest developers/contributors\
 
 
                  GNU LESSER GENERAL PUBLIC LICENSE
