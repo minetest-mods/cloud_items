@@ -12,4 +12,6 @@ read_globals = {
 
     "armor", "PseudoRandom", "toolranks",
     "stairs", "worldedit", "stairsplus",
+
+    "multitools",
 }

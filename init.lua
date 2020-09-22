@@ -22,7 +22,7 @@ USA
 ==========================================================================
 
 Dependencies: WorldEdit, default (included in Minetest Game)
-Optional dependencies: 3D Armor, Tool Ranks, More Blocks stairs (included in Minetest Game)
+Optional dependencies: 3D Armor, Tool Ranks, More Blocks, multitools, stairs (included in Minetest Game)
 --]]
 
 -- Translation support
@@ -478,6 +478,23 @@ minetest.register_tool("cloud_items:cloud_axe", {
 	original_description = toolranks_loaded and axe_desc or nil,
 	after_use = toolranks_loaded and toolranks.new_afteruse or nil,
 })
+
+-- Multitools support
+if minetest.get_modpath("multitools") then
+	multitools.register_multitool("cloud_items", "cloud", S("Cloud multitool"), "cloud_items_multitool_cloud.png", nil,
+	{
+		full_punch_interval = 0.9,
+		max_drop_level=1,
+		groupcaps={
+			cracky = {times={[1]=1.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			choppy = {times={[1]=0.5, [2]=0.60, [3]=0.60}, uses=40, maxlevel=3},
+			crumbly = {times={[1]=0.5, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+			snappy = {times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=90, maxlevel=3},
+		},
+		damage_groups = {fleshy=7.25}, -- Average damage from all cloud tools
+	}
+)
+end
 
 -------------
 -- Crafts --
