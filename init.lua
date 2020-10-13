@@ -34,7 +34,7 @@ local S = minetest.get_translator("cloud_items")
 
 minetest.register_node("cloud_items:cloud_ore", {
 	description = S("Cloud Ore"),
-	tiles = {"default_stone.png^cloud_items_mineral_cloud.png"},
+	tiles = {"default_cloud.png^cloud_items_mineral_cloud.png"},
 	light_source = 7,
 	groups = {cracky = 1, level = 3},
 	drop = "cloud_items:cloud_lump",
