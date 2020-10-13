@@ -627,6 +627,15 @@ if minetest.get_modpath("3d_armor") then
 			armor_groups = {fleshy=10},
 			damage_groups = {cracky=2, snappy=1, level=6},
 		})
+
+		minetest.register_craft({
+			output = "cloud_items:shield_cloud",
+			recipe = {
+				{"cloud_items:cloud_ingot", "cloud_items:cloud_ingot", "cloud_items:cloud_ingot"},
+				{"cloud_items:cloud_ingot", "cloud_items:cloud_ingot", "cloud_items:cloud_ingot"},
+				{"", "cloud_items:cloud_ingot", ""}
+			}
+		})
 	end
 
 	---------------
