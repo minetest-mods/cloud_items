@@ -503,9 +503,9 @@ end
 minetest.register_craft({
 	output = "cloud_items:cloud_sword",
 	recipe = {
-		{"cloud_items:cloud_ingot"},
-		{"cloud_items:cloud_ingot"},
-		{"group:stick"},
+		{"", "cloud_items:cloud_ingot", ""},
+		{"", "cloud_items:cloud_ingot", ""},
+		{"", "group:stick", ""},
 	}
 })
 
@@ -521,9 +521,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cloud_items:cloud_shovel",
 	recipe = {
-		{"cloud_items:cloud_ingot"},
-		{"group:stick"},
-		{"group:stick"},
+		{"", "cloud_items:cloud_ingot", ""},
+		{"", "group:stick", ""},
+		{"", "group:stick", ""},
 	}
 })
 
