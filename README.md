@@ -2,7 +2,7 @@
 
 ![Screenshot](https://user-images.githubusercontent.com/51391473/87363638-328a0280-c537-11ea-9e90-f992cbc13ab4.png)
 
-[![Build status](https://github.com/Panquesito7/cloud_items/workflows/build/badge.svg)](https://github.com/Panquesito7/cloud_items/actions)
+[![Build status](https://github.com/Panquesito7/cloud_items/workflows/build/badge.svg)](https://github.com/minetest-mods/cloud_items/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/cloud_items/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/cloud_items/)
 [![License](https://img.shields.io/badge/license-LGPLv2.1%2B-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
@@ -26,7 +26,7 @@ For further information or help, see:\
 ## Features
 
 Take a look at this mod's features.\
-Have any questions/comments? Submit an [issue](https://github.com/Panquesito7/cloud_items/issues/new) or [contact me](mailto:halfpacho@gmail.com).
+Have any questions/comments? Submit an [issue](https://github.com/minetest-mods/cloud_items/issues/new) or [contact me](mailto:halfpacho@gmail.com).
 
 ### Difference beetwen normal ores
 
@@ -113,7 +113,7 @@ It shall work with MT 5.0.0 and above, though.
 Copyright (C) 2019-2020 Panquesito7, David Leal\
 Copyright (C) Various other Minetest developers/contributors
 
-See [`LICENSE.md`](LICENSE.md) for more information.
+See [`LICENSE.md`](https://github.com/minetest-mods/cloud_items/blob/master/LICENSE.md) for more information.
 
 ## Credits
 
@@ -125,5 +125,5 @@ Credits to (in no particular order):
 
 ## Issues, suggestions, features & bugfixes
 
-Report bugs or suggest ideas by [creating an issue](https://github.com/Panquesito7/cloud_items/issues/new).\
-If you know how to fix an issue, or want something to be added, consider opening a [pull request](https://github.com/Panquesito7/cloud_items/compare).
+Report bugs or suggest ideas by [creating an issue](https://github.com/minetest-mods/cloud_items/issues/new).\
+If you know how to fix an issue, or want something to be added, consider opening a [pull request](https://github.com/minetest-mods/cloud_items/compare).
