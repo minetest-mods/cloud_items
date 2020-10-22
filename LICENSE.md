@@ -29,6 +29,11 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 
 - `cloud_items_multitool_cloud.png`
 
+Copyright (C) [Melkor](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=301) ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)):
+
+- `cloud_items_car_cloud.png` - [`car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/car_white.png)
+- `cloud_items_car_cloud_inventory.png` - [`inv_car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/inv_car_white.png)
+
 Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) 2017-2018 ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
 - All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](https://github.com/stujones11/minetest-3d_armor/tree/master/3d_armor/textures).
@@ -36,8 +41,7 @@ Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=v
 ## License for source code
 
 Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)\
-Copyright (C) Various other Minetest developers/contributors\
-
+Copyright (C) Various other Minetest developers/contributors
 
                  GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
