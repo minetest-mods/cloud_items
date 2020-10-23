@@ -2,7 +2,7 @@
 
 ![Screenshot](https://user-images.githubusercontent.com/51391473/87363638-328a0280-c537-11ea-9e90-f992cbc13ab4.png)
 
-[![Build status](https://github.com/Panquesito7/cloud_items/workflows/build/badge.svg)](https://github.com/minetest-mods/cloud_items/actions)
+[![Build status](https://github.com/minetest-mods/cloud_items/workflows/build/badge.svg)](https://github.com/minetest-mods/cloud_items/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/cloud_items/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/cloud_items/)
 [![License](https://img.shields.io/badge/license-LGPLv2.1%2B-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
