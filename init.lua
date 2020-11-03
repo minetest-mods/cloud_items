@@ -365,7 +365,11 @@ local function generate_cloud_house(minp, maxp, seed)
 			local y0 = pr:next(minp.y, maxp.y)
 			local z0 = pr:next(minp.z, maxp.z)
 			local p0 = {x = x0, y = y0, z = z0}
-			place_schem_metadata(p0, "cloud_house.we")
+			if not minetest.get_modpath("moreblocks") then
+				place_schem_metadata(p0, "cloud_house_1.we")
+			else
+				place_schem_metadata(p0, "cloud_house_2.we")
+			end
 		end
 	end
 end
