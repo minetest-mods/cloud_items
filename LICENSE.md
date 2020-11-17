@@ -6,6 +6,8 @@ Copyright (C) Various other Minetest developers/contributors
 [David Leal](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
 
 - `screenshot.png`
+- `cloud_items_cloud_ship.obj`
+- `cloud_items_cloud_ship_inventory.png`
 
 [BlockMen](https://github.com/BlockMen) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 

@@ -500,6 +500,39 @@ if minetest.get_modpath("multitools") then
 )
 end
 
+------------------
+-- Cloud ship --
+------------------
+
+-- Code is taken and modified from the Vehicle Mash (https://github.com/minetest-mods/vehicle_mash) mod (WTFPL license).
+-- See the mod license (https://github.com/minetest-mods/vehicle_mash/blob/master/LICENSE.md) for more information.
+local ship_def = {
+	terrain_type = 3,
+	max_speed_forward = 10,
+	max_speed_reverse = 7,
+	accel = 4,
+	braking = 5,
+	turn_speed = 6,
+	stepheight = 1.5,
+	-- model specific stuff
+	visual = "mesh",
+	visual_size = {x=1, y=1},
+	wield_scale = {x=1, y=1, z=1},
+	collisionbox = {-2.3, -0.3, -2, 2.5, 1.9, 2},
+	can_fly = true,
+	enable_crash = false,
+	onplace_position_adj = 0,
+	textures = {"default_cloud.png"},
+	-- player specific stuff
+	player_rotation = {x=0, y=0, z=0},
+	driver_attach_at = {x=-0.6, y=19, z=0},
+	driver_eye_offset = {x=-0.6, y=19, z=0},
+	number_of_passengers = 0
+}
+
+-- Cloud ship (based on the Vehicle Mash boat)
+loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/ship.lua")(table.copy(ship_def))
+
 ----------------
 -- Cloud car --
 ----------------

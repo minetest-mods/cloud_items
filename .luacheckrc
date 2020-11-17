@@ -3,7 +3,7 @@ allow_defined_top = true
 max_line_length = 999
 
 globals = {
-    "default", "minetest",
+    "default", "minetest", "core",
 }
 
 read_globals = {
@@ -13,5 +13,5 @@ read_globals = {
     "armor", "PseudoRandom", "toolranks",
     "stairs", "worldedit", "stairsplus",
 
-    "multitools", "vehicle_mash",
+    "multitools", "vehicle_mash", "lib_mount",
 }
