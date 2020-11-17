@@ -92,6 +92,7 @@ There are 4 types of cloud:
 - `default` (included in [Minetest Game](https://github.com/minetest/minetest_game))
 - [`worldedit`](https://github.com/Uberi/Minetest-WorldEdit)
   - This is required due to the `worldedit.deserialize` function.
+- [`vehicle_mash`](https://github.com/minetest-mods/vehicle_mash)
 
 ### Optional dependencies
 
@@ -103,7 +104,7 @@ There are 4 types of cloud:
 
 ## Requirements
 
-Cloud Items is currently tested with Minetest 5.3.0.\
+Cloud Items is currently tested with Minetest 5.4.0-dev.\
 Issues may arise if you use older or newer versions.
 
 It shall work with MT 5.0.0 and above, though.
