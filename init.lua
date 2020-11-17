@@ -539,43 +539,41 @@ loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/ship.lua")(ta
 
 -- Code is taken and modified from the Vehicle Mash (https://github.com/minetest-mods/vehicle_mash) mod (WTFPL license).
 -- See the mod license (https://github.com/minetest-mods/vehicle_mash/blob/master/LICENSE.md) for more information.
-if minetest.get_modpath("vehicle_mash") then
-	local car_def = {
-			terrain_type = 1,
-			max_speed_forward = 13,
-			max_speed_reverse = 10,
-			accel = 4,
-			braking = 6,
-			turn_speed = 4,
-			stepheight = 1.3,
+local car_def = {
+		terrain_type = 1,
+		max_speed_forward = 13,
+		max_speed_reverse = 10,
+		accel = 4,
+		braking = 6,
+		turn_speed = 4,
+		stepheight = 1.3,
 
-			visual = "mesh",
-			mesh = "car.x", -- Model is from the Vehicle Mash mod; licensed under CC BY-NC-SA 3.0
-			visual_size = {x=1, y=1},
-			wield_scale = {x=1, y=1, z=1},
-			collisionbox = {-0.6, -0.05, -0.6, 0.6, 1, 0.6},
-			onplace_position_adj = -0.45,
+		visual = "mesh",
+		mesh = "car.x", -- Model is from the Vehicle Mash mod; licensed under CC BY-NC-SA 3.0
+		visual_size = {x=1, y=1},
+		wield_scale = {x=1, y=1, z=1},
+		collisionbox = {-0.6, -0.05, -0.6, 0.6, 1, 0.6},
+		onplace_position_adj = -0.45,
 
-			player_rotation = {x=0,y=90,z=0},
-			driver_attach_at = {x=3.5,y=3.7,z=3.5},
-			driver_eye_offset = {x=-4, y=0, z=0},
-			number_of_passengers = 3,
-			passenger_attach_at = {x=3.5,y=3.7,z=-3.5},
-			passenger_eye_offset = {x=4, y=0, z=0},
+		player_rotation = {x=0,y=90,z=0},
+		driver_attach_at = {x=3.5,y=3.7,z=3.5},
+		driver_eye_offset = {x=-4, y=0, z=0},
+		number_of_passengers = 3,
+		passenger_attach_at = {x=3.5,y=3.7,z=-3.5},
+		passenger_eye_offset = {x=4, y=0, z=0},
 
-			passenger2_attach_at = {x=-4,y=3.7,z=3.5},
-			passenger2_eye_offset = {x=-4, y=3, z=0},
+		passenger2_attach_at = {x=-4,y=3.7,z=3.5},
+		passenger2_eye_offset = {x=-4, y=3, z=0},
 
-			passenger3_attach_at = {x=-4,y=3.7,z=-3.5},
-			passenger3_eye_offset = {x=4, y=3, z=0},
+		passenger3_attach_at = {x=-4,y=3.7,z=-3.5},
+		passenger3_eye_offset = {x=4, y=3, z=0},
 
-			drop_on_destroy = {"vehicle_mash:tire 2", "vehicle_mash:windshield",
-				"vehicle_mash:battery", "vehicle_mash:motor"},
-	}
+		drop_on_destroy = {"vehicle_mash:tire 2", "vehicle_mash:windshield",
+			"vehicle_mash:battery", "vehicle_mash:motor"},
+}
 
-	-- Cloud car (similar from the CAR01 from Vehicle Mash)
-	loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/car.lua")(table.copy(car_def))
-end
+-- Cloud car (similar from the CAR01 from Vehicle Mash)
+loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/car.lua")(table.copy(car_def))
 
 -------------
 -- Crafts --
