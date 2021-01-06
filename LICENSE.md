@@ -1,6 +1,6 @@
 # License for textures/media
 
-Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)\
+Copyright (C) 2019-2021 Panquesito7, David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
 [David Leal](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
@@ -42,7 +42,7 @@ Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=v
 
 ## License for source code
 
-Copyright (C) 2019-2020 Panquesito7, David Leal (halfpacho@gmail.com)\
+Copyright (C) 2019-2021 Panquesito7, David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
                  GNU LESSER GENERAL PUBLIC LICENSE
