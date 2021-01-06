@@ -21,7 +21,7 @@ USA
 
 ==========================================================================
 
-Dependencies: WorldEdit, default (included in Minetest Game)
+Dependencies: WorldEdit, Vehicle Mash, default (included in Minetest Game)
 Optional dependencies: 3D Armor, Tool Ranks, More Blocks, multitools, stairs (included in Minetest Game)
 --]]
 
@@ -531,7 +531,10 @@ local ship_def = {
 }
 
 -- Cloud ship (based on the Vehicle Mash boat)
-loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/ship.lua")(table.copy(ship_def))
+local boat_enabled = minetest.settings:get_bool("cloud_items.enable_cloud_car")
+if boat_enabled or boat_enabled == nil then
+	loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/ship.lua")(table.copy(ship_def))
+end
 
 ----------------
 -- Cloud car --
@@ -573,7 +576,10 @@ local car_def = {
 }
 
 -- Cloud car (similar from the CAR01 from Vehicle Mash)
-loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/car.lua")(table.copy(car_def))
+local car_enabled = minetest.settings:get_bool("cloud_items.enable_cloud_ship")
+if car_enabled or car_enabled == nil then
+	loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/car.lua")(table.copy(car_def))
+end
 
 -------------
 -- Crafts --

@@ -1,0 +1,4 @@
+# Vehicle settings
+
+cloud_items.enable_cloud_car (Enable/disable cloud car) bool true
+cloud_items.enable_cloud_ship (Enable/disable cloud ship) bool true
