@@ -36,9 +36,12 @@ Copyright (C) [Melkor](https://forum.minetest.net/memberlist.php?mode=viewprofil
 - `cloud_items_car_cloud.png` - [`car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/car_white.png)
 - `cloud_items_car_cloud_inventory.png` - [`inv_car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/inv_car_white.png)
 
-Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) 2017-2018 ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
+Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) 2017-2019 ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
 - All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](https://github.com/stujones11/minetest-3d_armor/tree/master/3d_armor/textures).
+- `cloud_items_gloves_cloud.png` - [`3d_armor_gloves_gloves_steel.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_gloves_steel.png)
+- `cloud_items_gloves_cloud_preview.png` - [`3d_armor_gloves_gloves_steel_preview.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_gloves_steel_preview.png)
+- `cloud_items_gloves_inv_gloves_cloud.png` - [`3d_armor_gloves_inv_gloves_steel.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_inv_gloves_steel.png)
 
 ## License for source code
 

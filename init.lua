@@ -723,6 +723,17 @@ if minetest.get_modpath("3d_armor") then
 		})
 	end
 
+	-- Support for 3D Armor Gloves/Gauntlets
+	if minetest.get_modpath("3d_armor_gloves") then
+		armor:register_armor("cloud_items:gloves_cloud", {
+			description = S("Cloud Gauntlets"),
+			inventory_image = "cloud_items_inv_gloves_cloud.png",
+			groups = {armor_hands=1, armor_heal=12, armor_use=70},
+			armor_groups = {fleshy=10},
+			damage_groups = {cracky=2, snappy=1, level=6},
+		})
+	end
+
 	---------------
 	-- Crafting --
 	---------------

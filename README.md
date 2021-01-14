@@ -108,6 +108,7 @@ There are 4 types of cloud:
 - [`toolranks`](https://github.com/lisacvuk/minetest-toolranks)
 - [`moreblocks`](https://github.com/minetest-mods/moreblocks)
 - [`multitools`](https://github.com/ChimneySwift/multitools)
+- [`3d_armor_gloves`](https://github.com/sirrobzeroone/3d_armor_gloves)
 - `stairs` (included in [Minetest Game](https://github.com/minetest/minetest_game))
 
 ## Requirements
