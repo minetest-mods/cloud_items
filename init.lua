@@ -571,6 +571,8 @@ local car_def = {
 		passenger3_attach_at = {x=-4,y=3.7,z=-3.5},
 		passenger3_eye_offset = {x=4, y=3, z=0},
 
+		enable_crash = false,
+
 		drop_on_destroy = {"vehicle_mash:tire 2", "vehicle_mash:windshield",
 			"vehicle_mash:battery", "vehicle_mash:motor"},
 }
