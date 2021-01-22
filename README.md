@@ -33,8 +33,12 @@ Have any questions/comments? Submit an [issue](https://github.com/minetest-mods/
 This "ore", doesn't spawn underground!\
 Instead, it spawns at the sky; that's why it's called "cloud".
 
-An ore will be spawned inside the schematic.\
-You have less chances to find an ore, than not to find an ore.
+An ore will be spawned somewhere in the schematic!\
+You'll have certain probabilities to have an ore or not!
+
+- For small clouds: 2.5% of getting an ore per node.
+- For medium clouds: 5% of getting an ore per node.
+- For big clouds: 7.5% of getting an ore per node.
 
 Small schematic
 ![Small schematic](https://user-images.githubusercontent.com/51391473/69098689-af9fbf00-0a1e-11ea-9e88-c74a6b74baa3.png)

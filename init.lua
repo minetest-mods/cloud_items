@@ -78,6 +78,50 @@ minetest.register_node("cloud_items:decorative_cloud", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+-- On-generation nodes. These nodes are used
+-- immediately right after generation.
+minetest.register_node("cloud_items:ongen_small", {
+	description = S("On-generation cloud"),
+	tiles = {"default_cloud.png"},
+	light_source = 2,
+	is_ground_content = false,
+	groups = {cracky = 1, level = 3, not_in_creative_inventory = 1},
+	drop = "",
+	sounds = default.node_sound_stone_defaults(),
+	on_place = function(itemstack, user, pointed_thing)
+		minetest.chat_send_player(user:get_player_name(), "You're not allowed to place on-generation cloud blocks!")
+		return itemstack
+	end,
+})
+
+minetest.register_node("cloud_items:ongen_medium", {
+	description = S("On-generation cloud"),
+	tiles = {"default_cloud.png"},
+	light_source = 2,
+	is_ground_content = false,
+	groups = {cracky = 1, level = 3, not_in_creative_inventory = 1},
+	drop = "",
+	sounds = default.node_sound_stone_defaults(),
+	on_place = function(itemstack, user, pointed_thing)
+		minetest.chat_send_player(user:get_player_name(), "You're not allowed to place on-generation cloud blocks!")
+		return itemstack
+	end,
+})
+
+minetest.register_node("cloud_items:ongen_big", {
+	description = S("On-generation cloud"),
+	tiles = {"default_cloud.png"},
+	light_source = 2,
+	is_ground_content = false,
+	groups = {cracky = 1, level = 3, not_in_creative_inventory = 1},
+	drop = "",
+	sounds = default.node_sound_stone_defaults(),
+	on_place = function(itemstack, user, pointed_thing)
+		minetest.chat_send_player(user:get_player_name(), "You're not allowed to place on-generation cloud blocks!")
+		return itemstack
+	end,
+})
+
 ------------
 -- Stairs --
 ------------
@@ -202,6 +246,53 @@ local function place_schem_metadata(origin, filename)
 	minetest.log("action", "Successfully placed schematic with " .. nodes .. " nodes (metadata)")
 end
 
+-- When an schematic is generated, it'll have a special node
+-- which will have certain chance to convert to an ore or normal cloud.
+local chance = math.random(1, 100)
+
+minetest.register_lbm({
+	label = "Replace cloud nodes with ore if succeeded",
+	name = "cloud_items:chance_add_ore",
+
+	nodenames = {"cloud_items:ongen_small", "cloud_items:ongen_medium", "cloud_items:ongen_big"},
+	run_at_every_load = true,
+
+	action = function(pos, node)
+		chance = math.random(1, 100)
+		if node.name == "cloud_items:ongen_small" then
+			if chance < 2.5 then
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud_ore"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with cloud ore.")
+			else
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with normal cloud.")
+			end
+		elseif node.name == "cloud_items:ongen_medium" then
+			if chance < 5 then
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud_ore"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with cloud ore.")
+			else
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with normal cloud.")
+			end
+		elseif node.name == "cloud_items:ongen_big" then
+			if chance < 7.5 then
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud_ore"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with cloud ore.")
+			else
+				minetest.remove_node(pos)
+				minetest.add_node(pos, {name="cloud_items:cloud"})
+				minetest.log("action", "cloud_items: Replaced on-generation cloud with normal cloud.")
+			end
+		end
+	end,
+})
+
 --[[
 Functions from Minetest Game's nyancat (LGPLv2.1+).
 
@@ -231,30 +322,6 @@ local function generate_small(minp, maxp, seed)
 	end
 end
 
--- Generate the small schematic without the ore. 🤭
--- There are more chances to find an small schematic without an ore.
-local function generate_small_without_ore(minp, maxp, seed)
-	local height_min = 200
-	local height_max = 1500
-	if maxp.y < height_min or minp.y > height_max then
-		return
-	end
-	local y_min = math.max(minp.y, height_min)
-	local y_max = math.min(maxp.y, height_max)
-	local volume = (maxp.x - minp.x + 1) * (y_max - y_min + 1) * (maxp.z - minp.z + 1)
-	local pr = PseudoRandom(seed + 9324342)
-	local max_num_schematics = math.floor(volume / (30 * 30 * 30))
-	for i = 1, max_num_schematics do
-		if pr:next(0, 1000) == 0 then
-			local x0 = pr:next(minp.x, maxp.x)
-			local y0 = pr:next(minp.y, maxp.y)
-			local z0 = pr:next(minp.z, maxp.z)
-			local p0 = {x = x0, y = y0, z = z0}
-			place_schem(p0, "cloud_small_2.we")
-		end
-	end
-end
-
 -- Medium.
 local function generate_medium(minp, maxp, seed)
 	local height_min = 380
@@ -274,29 +341,6 @@ local function generate_medium(minp, maxp, seed)
 			local z0 = pr:next(minp.z, maxp.z)
 			local p0 = {x = x0, y = y0, z = z0}
 			place_schem(p0, "cloud_medium_1.we")
-		end
-	end
-end
-
--- Medium (without ore).
-local function generate_medium_without_ore(minp, maxp, seed)
-	local height_min = 380
-	local height_max = 1680
-	if maxp.y < height_min or minp.y > height_max then
-		return
-	end
-	local y_min = math.max(minp.y, height_min)
-	local y_max = math.min(maxp.y, height_max)
-	local volume = (maxp.x - minp.x + 1) * (y_max - y_min + 1) * (maxp.z - minp.z + 1)
-	local pr = PseudoRandom(seed + 9324342)
-	local max_num_schematics = math.floor(volume / (38 * 38 * 38))
-	for i = 1, max_num_schematics do
-		if pr:next(0, 1000) == 0 then
-			local x0 = pr:next(minp.x, maxp.x)
-			local y0 = pr:next(minp.y, maxp.y)
-			local z0 = pr:next(minp.z, maxp.z)
-			local p0 = {x = x0, y = y0, z = z0}
-			place_schem(p0, "cloud_medium_2.we")
 		end
 	end
 end
@@ -324,30 +368,7 @@ local function generate_big(minp, maxp, seed)
 	end
 end
 
--- Big (without ore).
-local function generate_big_without_ore(minp, maxp, seed)
-	local height_min = 580
-	local height_max = 1880
-	if maxp.y < height_min or minp.y > height_max then
-		return
-	end
-	local y_min = math.max(minp.y, height_min)
-	local y_max = math.min(maxp.y, height_max)
-	local volume = (maxp.x - minp.x + 1) * (y_max - y_min + 1) * (maxp.z - minp.z + 1)
-	local pr = PseudoRandom(seed + 9324342)
-	local max_num_schematics = math.floor(volume / (46 * 46 * 46))
-	for i = 1, max_num_schematics do
-		if pr:next(0, 1000) == 0 then
-			local x0 = pr:next(minp.x, maxp.x)
-			local y0 = pr:next(minp.y, maxp.y)
-			local z0 = pr:next(minp.z, maxp.z)
-			local p0 = {x = x0, y = y0, z = z0}
-			place_schem(p0, "cloud_big_2.we")
-		end
-	end
-end
-
--- Cloud house
+-- Cloud house.
 local function generate_cloud_house(minp, maxp, seed)
 	local height_min = 1500
 	local height_max = 3750
@@ -377,11 +398,8 @@ end
 -- Generate/place the schematics.
 minetest.register_on_generated(function(minp, maxp, seed)
 	generate_small(minp, maxp, seed)
-	generate_small_without_ore(minp, maxp, seed)
 	generate_medium(minp, maxp, seed)
-	generate_medium_without_ore(minp, maxp, seed)
 	generate_big(minp, maxp, seed)
-	generate_big_without_ore(minp, maxp, seed)
 	generate_cloud_house(minp, maxp, seed)
 end)
 
