@@ -5,6 +5,7 @@
 [![Build status](https://github.com/minetest-mods/cloud_items/workflows/build/badge.svg)](https://github.com/minetest-mods/cloud_items/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/cloud_items/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/cloud_items/)
 [![License](https://img.shields.io/badge/license-LGPLv2.1%2B-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
+[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Panquesito7/donate)
 
 Adds powerful cloud tools for Minetest.  
 Stronger than diamond and other materials.  
