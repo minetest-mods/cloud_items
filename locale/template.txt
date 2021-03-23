@@ -37,4 +37,5 @@ Decorative cloud Panel=
 Decorative cloud Stairs=
 Cloud multitool=
 Cloud car=
+Cloud ship=
 Cloud Gauntlets=
