@@ -1,8 +1,12 @@
 -- Code from the Vehicle Mash mod (WTFPL license)
+
+-- Translation support
+local S = minetest.get_translator("cloud_items")
+
 local name = "car_cloud"
 local definition = ...
 
-definition.description = "Cloud car"
+definition.description = S("Cloud car")
 definition.inventory_image = "cloud_items_car_cloud_inventory.png"
 definition.wield_image = "cloud_items_car_cloud_inventory.png"
 definition.textures = {"cloud_items_car_cloud.png"}

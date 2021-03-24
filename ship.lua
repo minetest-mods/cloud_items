@@ -1,8 +1,12 @@
 -- Code from the Vehicle Mash mod (WTFPL license)
+
+-- Translation support
+local S = minetest.get_translator("cloud_items")
+
 local name = "cloud_ship"
 local definition = ...
 
-definition.description = "Cloud ship"
+definition.description = S("Cloud ship")
 definition.inventory_image = "cloud_items_cloud_ship_inventory.png"
 definition.wield_image = "cloud_items_cloud_ship_inventory.png"
 definition.mesh = "cloud_items_cloud_ship.obj"
