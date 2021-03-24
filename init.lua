@@ -528,6 +528,9 @@ local ship_def = {
 	terrain_type = 3,
 	max_speed_forward = 10,
 	max_speed_reverse = 7,
+	max_speed_upwards = 5,
+	max_speed_downwards = 3.5,
+
 	accel = 4,
 	braking = 5,
 	turn_speed = 6,
