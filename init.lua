@@ -549,8 +549,8 @@ local ship_def = {
 }
 
 -- Cloud ship (based on the Vehicle Mash boat)
-local boat_enabled = minetest.settings:get_bool("cloud_items.enable_cloud_ship")
-if boat_enabled or boat_enabled == nil then
+local ship_enabled = minetest.settings:get_bool("cloud_items.enable_cloud_ship")
+if ship_enabled or ship_enabled == nil then
 	loadfile(minetest.get_modpath(minetest.get_current_modname()) .. "/ship.lua")(table.copy(ship_def))
 end
 
