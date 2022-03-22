@@ -125,7 +125,7 @@ It shall work with MT 5.0.0 and above, though.
 
 ## License
 
-Copyright (C) 2019-2021 Panquesito7, David Leal\
+Copyright (C) 2019-2022 Panquesito7, David Leal\
 Copyright (C) Various other Minetest developers/contributors
 
 See [`LICENSE.md`](https://github.com/minetest-mods/cloud_items/blob/master/LICENSE.md) for more information.
