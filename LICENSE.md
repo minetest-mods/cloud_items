@@ -11,7 +11,7 @@ Copyright (C) Various other Minetest developers/contributors
 
 [BlockMen](https://github.com/BlockMen) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-- `cloud_items_tool_*.png` - [`default_tool_*.png`](https://github.com/minetest/minetest_game/tree/master/mods/default/textures)\
+- `cloud_items_tool_*.png` - [`default_tool_*.png`](https://github.com/minetest/minetest_game/tree/master/mods/default/textures)
 - `cloud_items_cloud_ingot.png` - [`default_gold_ingot.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_ingot.png)
 
 [InfinityProject](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=1494) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
@@ -24,7 +24,7 @@ Copyright (C) Various other Minetest developers/contributors
 
 [kilbith](https://github.com/kilbith) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
-- `cloud_items_cloud_block.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)\
+- `cloud_items_cloud_block.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
 - `cloud_items_decorationblock.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/):
