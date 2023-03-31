@@ -1,7 +1,7 @@
 --[[
 Adds powerful cloud tools for Minetest.
 
-Copyright (C) 2019-2022 David Leal (halfpacho@gmail.com)
+Copyright (C) 2019-2023 David Leal (halfpacho@gmail.com)
 Copyright (C) Various other Minetest developers/contributors
 
 This library is free software; you can redistribute it and/or
