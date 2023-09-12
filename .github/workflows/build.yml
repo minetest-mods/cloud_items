@@ -1,11 +1,10 @@
+name: luacheck
 on: [push, pull_request]
-name: build
 jobs:
-  lint:
+  luacheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: lint
-        uses: Roang-zero1/factorio-mod-luacheck@master
-        with:
-          luacheckrc_url: ""
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: LuaCheck
+        uses: lunarmodules/luacheck@master
