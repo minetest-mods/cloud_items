@@ -1,11 +1,9 @@
-# Cloud Items
+# Cloud Items ☁
 
 ![Screenshot](https://user-images.githubusercontent.com/51391473/87363638-328a0280-c537-11ea-9e90-f992cbc13ab4.png)
 
 [![Build status](https://github.com/minetest-mods/cloud_items/workflows/build/badge.svg)](https://github.com/minetest-mods/cloud_items/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/cloud_items/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/cloud_items/)
-[![License](https://img.shields.io/badge/license-LGPLv2.1%2B-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
-[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Panquesito7/donate)
 
 Adds powerful cloud tools for Minetest.  
 Stronger than diamond and other materials.  
@@ -29,10 +27,10 @@ For further information or help, see:\
 Take a look at this mod's features.\
 Have any questions/comments? Submit an [issue](https://github.com/minetest-mods/cloud_items/issues/new) or [contact me](mailto:halfpacho@gmail.com).
 
-### Difference beetwen normal ores
+### Difference between normal ores
 
 This "ore", doesn't spawn underground!\
-Instead, it spawns at the sky; that's why it's called "cloud".
+Instead, it spawns in the sky; that's why it's called "cloud".
 
 An ore will be spawned somewhere in the schematic!\
 You'll have certain probabilities to have an ore or not!
@@ -69,7 +67,7 @@ This cloud house includes great things such as chests with stuff!
 
 ### Types of cloud
 
-There are 4 types of cloud:
+There are 4 types of clouds:
 
 - Normal cloud
   - Hard to find.
@@ -78,21 +76,21 @@ There are 4 types of cloud:
   - Damage: 11
     - Can kill players with 2 hits.
   - Spawns at 200 blocks and above.
-- Cloud star (comming soon)
+- Cloud star (coming soon)
   - Difficult to find.
   - You may find from 1 to 4 ores.
   - Stronger than cloud and diamond.
   - Damage: 12
     - Can kill players with 2 hits.
   - Spawns at 350 blocks and above.  
-- Cloud meteor (comming soon)
+- Cloud meteor (coming soon)
   - Very hard to find.
   - You may find from 1 to 3 ores.
   - Stronger than cloud (star) and diamond.
   - Damage: 14
     - Can kill players with 2 hits.
   - Spawns at 500 blocks and above.
-- Cloud comet (comming soon)
+- Cloud comet (coming soon)
   - Very difficult to find.
   - You may find only 1 ore.
   - Stronger than all materials.
@@ -100,37 +98,7 @@ There are 4 types of cloud:
     - Very strong, can kill a player with 2 hits.
   - Spawns at 800 blocks and above.
 
-## Dependencies
-
-- `default` (included in [Minetest Game](https://github.com/minetest/minetest_game))
-- [`worldedit`](https://github.com/Uberi/Minetest-WorldEdit)
-  - This is required due to the `worldedit.deserialize` function.
-- [`vehicle_mash`](https://github.com/minetest-mods/vehicle_mash)
-
-### Optional dependencies
-
-- [`3d_armor`](https://github.com/minetest-mods/3d_armor)
-- [`toolranks`](https://github.com/lisacvuk/minetest-toolranks)
-- [`moreblocks`](https://github.com/minetest-mods/moreblocks)
-- [`multitools`](https://github.com/ChimneySwift/multitools)
-- [`3d_armor_gloves`](https://github.com/sirrobzeroone/3d_armor_gloves)
-- `stairs` (included in [Minetest Game](https://github.com/minetest/minetest_game))
-
-## Requirements
-
-Cloud Items is currently tested with Minetest 5.4.0-dev.\
-Issues may arise if you use older or newer versions.
-
-It shall work with MT 5.0.0 and above, though.
-
-## License
-
-Copyright (C) 2019-2023 Panquesito7, David Leal\
-Copyright (C) Various other Minetest developers/contributors
-
-See [`LICENSE.md`](https://github.com/minetest-mods/cloud_items/blob/master/LICENSE.md) for more information.
-
-## Credits
+## License and credits
 
 Credits to (in no particular order):
 
@@ -138,7 +106,4 @@ Credits to (in no particular order):
 - [Brett O'Donnell](https://github.com/cornernote)
   - For the function to load an schematic.
 
-## Issues, suggestions, features & bugfixes
-
-Report bugs or suggest ideas by [creating an issue](https://github.com/minetest-mods/cloud_items/issues/new).\
-If you know how to fix an issue, or want something to be added, consider opening a [pull request](https://github.com/minetest-mods/cloud_items/compare).
+See the [`LICENSE.md`](LICENSE.md) file for full information.

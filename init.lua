@@ -1,7 +1,7 @@
 --[[
 Adds powerful cloud tools for Minetest.
 
-Copyright (C) 2019-2023 David Leal (halfpacho@gmail.com)
+Copyright (C) 2019-2024 David Leal (halfpacho@gmail.com)
 Copyright (C) Various other Minetest developers/contributors
 
 This library is free software; you can redistribute it and/or
@@ -18,11 +18,6 @@ You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
 USA
-
-==========================================================================
-
-Dependencies: WorldEdit, Vehicle Mash, default (included in Minetest Game)
-Optional dependencies: 3D Armor, Tool Ranks, More Blocks, multitools, stairs (included in Minetest Game)
 --]]
 
 -- Translation support

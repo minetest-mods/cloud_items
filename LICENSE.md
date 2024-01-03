@@ -1,13 +1,13 @@
-# License for textures/media
+# License of media (textures, models, and schematics)
 
-Copyright (C) 2019-2023 Panquesito7, David Leal (halfpacho@gmail.com)\
+Copyright (C) 2019-2024 David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
 [David Leal](https://github.com/Panquesito7) ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)):
 
-- `screenshot.png`
 - `cloud_items_cloud_ship.obj`
 - `cloud_items_cloud_ship_inventory.png`
+- `schems/cloud_*`
 
 [BlockMen](https://github.com/BlockMen) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
@@ -27,25 +27,29 @@ Copyright (C) Various other Minetest developers/contributors
 - `cloud_items_cloud_block.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
 - `cloud_items_decorationblock.png` - [`default_gold_block.png`](https://github.com/minetest/minetest_game/blob/master/mods/default/textures/default_gold_block.png)
 
-Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/):
-
-- `cloud_items_multitool_cloud.png`
-
-Copyright (C) [Melkor](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=301) ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)):
-
-- `cloud_items_car_cloud.png` - [`car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/car_white.png)
-- `cloud_items_car_cloud_inventory.png` - [`inv_car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/inv_car_white.png)
-
-Copyright (C) [davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) 2017-2019 ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
+[davidthecreator](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=11158) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)):
 
 - All [`3d_armor`](https://github.com/stujones11/minetest-3d_armor) [textures](https://github.com/stujones11/minetest-3d_armor/tree/master/3d_armor/textures).
 - `cloud_items_gloves_cloud.png` - [`3d_armor_gloves_gloves_steel.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_gloves_steel.png)
 - `cloud_items_gloves_cloud_preview.png` - [`3d_armor_gloves_gloves_steel_preview.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_gloves_steel_preview.png)
 - `cloud_items_gloves_inv_gloves_cloud.png` - [`3d_armor_gloves_inv_gloves_steel.png`](https://github.com/sirrobzeroone/3d_armor_gloves/blob/main/textures/3d_armor_gloves_inv_gloves_steel.png)
 
-## License for source code
+[KatzPetz](https://github.com/KatzPetz) ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)) from <https://forum.minetest.net/viewtopic.php?p=380992#p380992>:
 
-Copyright (C) 2019-2023 Panquesito7, David Leal (halfpacho@gmail.com)\
+- `cloud_items_multitool_cloud.png`
+
+[Melkor](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=301) ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)):
+
+- `cloud_items_car_cloud.png` - [`car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/car_white.png)
+- `cloud_items_car_cloud_inventory.png` - [`inv_car_white.png`](https://github.com/minetest-mods/vehicle_mash/blob/master/textures/inv_car_white.png)
+
+License of screenshots:
+
+- The screenshots were taken by me ([Panquesito7](https://github.com/Panquesito7)) on [Minetest Game](https://github.com/minetest/minetest_game) along with [this mod](https://github.com/minetest-mods/cloud_items). All the assets/media shown in the image fall under their respective license and belong to their respective authors.
+
+## License of source code
+
+Copyright (C) 2019-2024 David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
                  GNU LESSER GENERAL PUBLIC LICENSE
